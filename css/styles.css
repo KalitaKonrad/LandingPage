@@ -30,6 +30,10 @@ header {
    min-height: 70px;
 }
 
+#dev h1 {
+   display: inline-block;
+}
+
 header a {
    color: var(--header-buttons-color);
    text-decoration: none;
@@ -57,4 +61,11 @@ header #dev h1 {
 header nav {
    float: right;
    margin-top: 10px;
+}
+
+#cover_photo {
+   min-height: 400px;
+   background: url(../img/cover_photo.png) no-repeat;
+   background-size: 100% 100%;
+   text-align: center;
 }
