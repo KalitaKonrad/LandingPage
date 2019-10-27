@@ -1,5 +1,60 @@
-
-
+:root {
+   --header-buttons-color: #515151;
+   --main-bg-color: #E1E1E1;
+}
 body {
-   background: white; 
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   line-height: 1.5;
+   padding: 0;
+   margin: 0;
+   background: #f4f4f4; 
+}
+
+/* Global */
+.container {
+   width: 80%;
+   margin: auto;
+   overflow: hidden;
+}
+ul {
+   margin: 0;
+   padding: 0;
+}
+/* Header */
+
+header {
+   background: var(--main-bg-color);
+   color: var(--header-buttons-color);
+   padding-top: 30px;
+   min-height: 70px;
+}
+
+header a {
+   color: var(--header-buttons-color);
+   text-decoration: none;
+   font-family: Raleway;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   letter-spacing: 0.02em;
+}
+
+header li {
+   display: inline;
+   padding: 0 20px;
+}
+
+header #dev {
+   float: left;
+}
+
+header #dev h1 {
+   margin: 0;
+}
+
+header nav {
+   float: right;
+   margin-top: 10px;
 }
