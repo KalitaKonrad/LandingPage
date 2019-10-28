@@ -1,6 +1,7 @@
 :root {
   --header-buttons-color: #515151;
   --main-bg-color: #E1E1E1;
+  --welcome-color: #FFC53D;
 }
 body {
   font-family: 'Alegreya Sans', sans-serif;
@@ -61,6 +62,7 @@ header {
 
 .cover_photo {
   display: flex;
+  position: relative;
   min-width: 100%;
   min-height: 100%;
   background-image: url('/img/cover_photo.png');
@@ -68,8 +70,35 @@ header {
   background-size: cover;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .container .cover_photo {
   min-height: 585px;
+}
+
+.layer {
+  position: absolute;
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+  z-index: inherit;
+}
+
+.cover_photo h1 {
+  position: absolute;
+  font-size: 100px;
+  font-weight: bold;
+  text-align: inherit;
+  color: var(--welcome-color);
+  top: 3%;
+}
+
+.cover_photo h2 {
+  position: absolute;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: inherit;
+  color: #FFFFFF;
+  top: 30%;
 }
