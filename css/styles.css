@@ -4,11 +4,12 @@
 }
 body {
   font-family: 'Alegreya Sans', sans-serif;
+  height: 100%;
   font-size: 18px;
   line-height: 1.5;
   padding: 0px;
   margin: 0;
-  background: #f4f4f4; 
+  background: var(--main-bg-color); 
 }
 
 /* Global */
@@ -18,9 +19,11 @@ body {
   border: 2px solid black;
   align-items: center;
   margin: auto;
+  flex-flow: row wrap;
   overflow: hidden;
   justify-content: space-between;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -39,12 +42,13 @@ header {
 .brand {
   display: flex;
   align-items: center;
+  margin-left: 5%; 
+  height: 100%;
 }
 
 .container nav a {
   justify-content: flex-end;
   color: var(--header-buttons-color);
-  border: 2px solid black;
   padding: 0px 15px;
   text-decoration: none;
   font-family: Raleway;
@@ -53,16 +57,5 @@ header {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.02em;
-}
-
-
-/* image */
-
-.myFlexedImage {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  text-align: center;
-
 }
 
