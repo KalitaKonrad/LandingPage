@@ -18,7 +18,7 @@ body {
 /* Global */
 .container {
   display: flex;
-  width: 80%;
+  width: 70%;
   border: 2px solid #000;
   align-items: center;
   margin: auto;
@@ -105,20 +105,4 @@ header {
   text-align: inherit;
   color: #FFFFFF;
   top: 30%;
-}
-
-/* social media links */
-
-.social_media {
-  display: flex;
-  position: relative;
-  justify-content: center; 
-  border: 1px solid #000;
-}
-
-.social_media li {
-  display: inline-flex;
-  position: relative;
-  bottom: 75%;
-  border: 1px solid red;
 }
