@@ -106,3 +106,13 @@ header {
   color: #FFFFFF;
   top: 30%;
 }
+
+ .contact_and_cv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  border: 3px solid yellow;
+  margin: auto;
+  overflow: hidden; 
+}
