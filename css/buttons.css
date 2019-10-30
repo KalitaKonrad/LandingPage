@@ -50,20 +50,14 @@ li.social_media_button.github {
 .button_container {
   display: flex;
   position: relative;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  border: 3px solid green;
+  bottom: 15px;
+  width: 35%;
   overflow: visible;
 }
 
-.button {
+.button_container .button {
   position: relative;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: 0%;
+  margin: 0 10%;
   font-style: normal;
 
   background: linear-gradient(270deg
@@ -79,5 +73,9 @@ li.social_media_button.github {
   margin: 0 auto;
   /* identical to box height */
   color: #FFFFFF;
-  text-align: center;
+}
+
+.button:hover {
+  color: var(--universal-button-color);
+  background: #FFFFFF;
 }
