@@ -3,11 +3,11 @@
   --main-bg-color: #FFFFFF;
   --welcome-color: #FFC53D;
   --social-media-links-color: #FF9A3D;
-  --gray-main-rectangle(#FAFAFF);
+  --gray-main-rectangle: #FAFAFF;
 }
 
 body {
-  font-family: Raleway, 'Alegreya Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
   height: 100%;
   font-size: 18px;
   line-height: 1.5;
@@ -54,7 +54,6 @@ header {
 .navbar_buttons li {
   padding: 0px 15px;
   cursor: pointer;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -74,7 +73,6 @@ header {
   padding: 0px 15px;
   list-style-type: none;
   text-decoration: none;
-  font-family: Raleway;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -97,7 +95,7 @@ header {
 }
 
 .container .cover_photo {
-  min-height: 585px;
+  min-height: 630px;
 }
 
 .layer {
@@ -163,6 +161,8 @@ header {
   margin: auto;
   overflow: hidden;
   background: var(--main-bg-color);
+  background-image: linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
+  background-image: -webkit-linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%)
 }
 
 .about_me h2 {
@@ -193,8 +193,8 @@ header {
   display: flex;
   flex-flow: column wrap;
   position: relative;
-  right: 7%;
-  bottom: 40px;
+  right: 6%;
+  bottom: 20px;
   border: 2px solid green;
   align-items: center;
   
@@ -203,7 +203,6 @@ header {
   white-space: nowrap;
   
   background-color: var(--main-bg-color);
-  font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -222,6 +221,27 @@ header {
   max-width: 50%;
 }
 
+.skills {
+  display: flex;
+  width: 80%;
+  border: 2px solid #000;
+  align-items: center;
+  margin: auto;
+  flex-flow: row wrap;
+  overflow: hidden;
+  justify-content: space-between;
+  background: var(--main-bg-color);
+}
+
+.skills h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
 /* grey main rectangle ?????????? */
 
 /*
