@@ -137,6 +137,7 @@ header {
   width: 80%;
   border: 3px solid yellow;
   margin: auto;
+  padding: 50px 0;
   overflow: hidden; 
 }
 
@@ -149,6 +150,76 @@ header {
   text-align: center;
   letter-spacing: 0.02em;
   color: #222222;
+}
+
+/* about me section */
+
+.about_me {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 80%;
+  border: 2px solid orange;
+  margin: auto;
+  overflow: hidden;
+  background: var(--main-bg-color);
+}
+
+.about_me h2 {
+  margin-left: 10%;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+
+.photo_personalData_description {
+  display: flex;
+  width: 80%;
+  position: relative;
+  justify-content: space-around;
+  top: 20%;
+  margin: auto;
+  border: 2px solid red;
+  padding: 2.5%;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+}
+
+.personalData {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  right: 7%;
+  bottom: 40px;
+  border: 2px solid green;
+  align-items: center;
+  
+  margin: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  
+  background-color: var(--main-bg-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.personalData li {
+  padding: 5px;
+}
+.personalData ul {
+  list-style-type: none;
+}
+
+.description {
+  border-left: 4px dotted var(--welcome-color);
+  padding: 0 2%;
+  max-width: 50%;
 }
 
 /* grey main rectangle ?????????? */
