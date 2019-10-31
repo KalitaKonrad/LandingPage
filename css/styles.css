@@ -1,9 +1,9 @@
 :root {
   --header-buttons-color: #515151;
   --main-bg-color: #FFFFFF;
-  --welcome-color: #FFC53D;
   --social-media-links-color: #FF9A3D;
   --gray-main-rectangle: #FAFAFF;
+  --distinctive-text-color: #FFC53D;
 }
 
 body {
@@ -112,7 +112,7 @@ header {
   font-size: 100px;
   font-weight: bold;
   text-align: inherit;
-  color: var(--welcome-color);
+  color: var(--distinctive-text-color);
   top: 3%;
 }
 
@@ -159,17 +159,15 @@ header {
   width: 80%;
   border: 2px solid orange;
   margin: auto;
+  padding-bottom: 5%;
   overflow: hidden;
   background: var(--main-bg-color);
   background-image: linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
-  background-image: -webkit-linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%)
+  background-image: -webkit-linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
 }
 
 .about_me h2 {
   margin-left: 10%;
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: bold;
   font-size: 32px;
   line-height: 37px;
   letter-spacing: 0.02em;
@@ -216,40 +214,77 @@ header {
 }
 
 .description {
-  border-left: 4px dotted var(--welcome-color);
+  border-left: 4px dotted var(--distinctive-text-color);
   padding: 0 2%;
   max-width: 50%;
 }
 
+/* skill section */
+
 .skills {
   display: flex;
+  position: relative;
+  flex-flow: column wrap;
   width: 80%;
-  border: 2px solid #000;
-  align-items: center;
-  margin: auto;
-  flex-flow: row wrap;
+  border: 2px solid green;
+  margin: 4% auto;
   overflow: hidden;
   justify-content: space-between;
   background: var(--main-bg-color);
+  background-image: linear-gradient(right, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
+  background-image: -webkit-linear-gradient(right, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
 }
 
 .skills h2 {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
+  margin-left: 35%;
   font-size: 32px;
   line-height: 38px;
   letter-spacing: 0.02em;
   color: #222222;
 }
-/* grey main rectangle ?????????? */
 
-/*
-.grey_rectangle h1 {
+.core_skills {
   display: flex;
-  position: absolute;
-  z-index: -1;
-  background: red;
-  width: 700px;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  justify-content: space-evenly;
+  border: 2px solid orange;
+  flex-flow: row wrap;
 }
-*/
+
+ul.core_skills {
+  list-style-type: none;
+}
+
+.certain_skill {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.distinctive_text {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: var(--distinctive-text-color);
+  padding-bottom: 10px;
+}
+
+.certain_skill_photo {
+  padding-bottom: 50px;
+  align-self: center;
+}
+
+.has_special_borders {
+  border-left: 4px dotted var(--distinctive-text-color);
+  border-right: 4px dotted var(--distinctive-text-color);
+  padding: 0 70px;   /* dunno why percentage value breaks items underneath */
+}
