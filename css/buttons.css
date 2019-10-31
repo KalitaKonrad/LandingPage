@@ -1,50 +1,45 @@
 :root {
   --universal-button-color: #FFC53D;
   --social-media-color: #FF9A3D;
+  --social-media-background-color: #FFFFFF;
 }
 
 /* social media links */
 
 .social_media {
   display: flex;
-  position: absolute;
-  justify-content: space-around; 
-}
-
-#media {
-  display: flex;
   position: relative;
-  justify-content: space-evenly;
-  min-width: 200px;
+  justify-content: space-around; 
 }
 
 .social_media li {
   display: inline-flex;
   position: relative;
-  padding: 3.5%;
-  border-radius: 100%;
+  bottom: 30%;
+  transform: scale(0.7);
 }
 
-li.social_media_button.twitter {
-  background-color: #FFFFFF;
-  border-radius: 100%;
-}
-
-li.social_media_button.linkedin {
-  background-color: #FFFFFF;
-  border-radius: 100%;
-}
-
-li.social_media_button.facebook {
-  background-color: #FFFFFF;
-  border-radius: 100%;
-}
-
-li.social_media_button.github {
-   /* what goes here to increase the size of icon? */
+.icon {
+  display: flex;
 
 }
 
+i.fa-circle {
+  color: var(--social-media-background-color);
+}
+
+i.fa-linkedin-in {
+  color: var(--social-media-color);
+}
+
+i.fa-facebook-f {
+  color: var(--social-media-color);
+}
+
+i.fa-twitter {
+  color: var(--social-media-color);
+
+}
 /* button container and button styles */
 
 .button_container {
