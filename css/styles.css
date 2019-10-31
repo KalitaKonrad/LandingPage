@@ -1,8 +1,9 @@
 :root {
   --header-buttons-color: #515151;
-  --main-bg-color: #FFF;
+  --main-bg-color: #FFFFFF;
   --welcome-color: #FFC53D;
   --social-media-links-color: #FF9A3D;
+  --gray-main-rectangle(#FAFAFF);
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   line-height: 1.5;
   padding: 0px;
   margin: 0;
-  background: var(--main-bg-color); 
+  background: var(--main-bg-color);
 }
 
 /* Global */
@@ -25,6 +26,7 @@ body {
   flex-flow: row wrap;
   overflow: hidden;
   justify-content: space-between;
+  background: var(--main-bg-color);
 }
 
 ul {
@@ -49,10 +51,28 @@ header {
   height: 100%;
 }
 
-.container nav a {
-  justify-content: flex-end;
+.navbar_buttons li {
+  padding: 0px 15px;
+  cursor: pointer;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+}
+
+.navbutton {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar_buttons {
+  display: flex;
+  justify-content: flex-start;
   color: var(--header-buttons-color);
   padding: 0px 15px;
+  list-style-type: none;
   text-decoration: none;
   font-family: Raleway;
   font-style: normal;
@@ -108,6 +128,7 @@ header {
 }
 
 /* contact and cv section */
+
  .contact_and_cv {
   display: flex;
   position: relative;
@@ -120,7 +141,6 @@ header {
 }
 
 .contact_and_cv h2 {
-  
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -130,3 +150,15 @@ header {
   letter-spacing: 0.02em;
   color: #222222;
 }
+
+/* grey main rectangle ?????????? */
+
+/*
+.grey_rectangle h1 {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  background: red;
+  width: 700px;
+}
+*/
