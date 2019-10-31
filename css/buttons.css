@@ -19,11 +19,6 @@
   transform: scale(0.7);
 }
 
-.icon {
-  display: flex;
-
-}
-
 i.fa-circle {
   color: var(--social-media-background-color);
 }
@@ -38,8 +33,12 @@ i.fa-facebook-f {
 
 i.fa-twitter {
   color: var(--social-media-color);
-
 }
+
+i.fa-github {
+  color: var(--social-media-color);  /* TO CHANGE! but how? */
+}
+
 /* button container and button styles */
 
 .button_container {
