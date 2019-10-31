@@ -44,7 +44,6 @@ i.fa-github {
 .button_container {
   display: flex;
   position: relative;
-  bottom: 15px;
   width: 35%;
   overflow: visible;
 }
