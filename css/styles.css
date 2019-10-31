@@ -257,9 +257,11 @@ header {
   position: relative;
   width: 80%;
   margin: auto;
+  padding: 2.5%;
   justify-content: space-evenly;
   border: 2px solid orange;
   flex-flow: row wrap;
+  background-color: var(--main-bg-color);
 }
 
 ul.core_skills {
@@ -296,4 +298,104 @@ ul.core_skills {
   border-left: 4px dotted var(--distinctive-text-color);
   border-right: 4px dotted var(--distinctive-text-color);
   padding: 0 70px;   /* dunno why percentage value breaks items underneath */
+}
+
+/* portfolio section */
+
+.portfolio h2 {
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
+
+.portfolio {
+  display: flex;
+  width: 80%;
+  border: 2px solid #000;
+  flex-flow: column wrap;
+  margin: auto;
+  overflow: visible;
+  background: var(--main-bg-color); 
+}
+
+.design_projects {
+  display: grid;
+  grid-template-columns: 30% 10% 25% 35%;
+  align-content: stretch;
+  justify-content: stretch;
+}
+
+/* portfolio items (in grid) */
+.item-a {
+  display: flex;
+  flex-flow: column wrap;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-image: url('/img/design_projects/first.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  align-items: left;
+  min-height: 400px;
+}
+
+.item-a h2, .item-e h2 {
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.item-a p, .item-e p {
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+.item-b {
+  display: flex;
+  background-image: url('/img/design_projects/second.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.item-c {
+  display: flex;
+  background-image: url('/img/design_projects/third.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.item-d {
+  display: flex;
+  background-image: url('/img/design_projects/fourth.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item-e {
+  display: flex;
+  flex-flow: column wrap;
+  grid-column: 2/5;
+  grid-row: 2/3;
+  background-image: url('/img/design_projects/fifth.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 19px;
+  align-items: left;
+  letter-spacing: 0.02em;
 }

@@ -24,9 +24,9 @@
         <!-- Liste zrobic -->
         <ul class="navbar_buttons">
           <li><a href="#about_me" class="navbutton">About me</a></li>
-          <li><a href="index.html" class="navbutton">Skills</a></li>
+          <li><a href="#skills" class="navbutton">Skills</a></li>
           <li><a href="index.html" class="navbutton">Portfolio</a></li>
-          <li><a href="index.html" class="navbutton">Contact</a></li>
+          <li><a href="#contact_and_cv" class="navbutton">Contact</a></li>
         </ul>      
       </nav>
       <div class="container">
@@ -74,7 +74,7 @@
       </div>
     </header>
     
-    <section class="contact_and_cv">
+    <section class="contact_and_cv" id="contact_and_cv">
       <h2>I am happy to help you with any problem!</h2>
       <div class="button_container">
         <button type="button" class="button" onclick="alert('Contact redirection')">Contact me!</button>
@@ -82,7 +82,7 @@
       </div>
     </section>
 
-    <section class="about_me">
+    <section class="about_me" id="about_me">
       <h2>About me</h2>
       <div class="photo_personalData_description">
         <img src="img/avatar.png" alt="Photo of me" width="96px" height="96px">
@@ -109,7 +109,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
       <h2>Skills</h2>
       <div>
         <ul class="core_skills">
@@ -132,6 +132,33 @@
       </div>
     </section>
 
+    <section class="portfolio">
+      <h2>Portfolio</h2>
+      <div class="design_projects">
+        <div class="item-a">
+          <h2>Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Q
+          uisque auctor bibendum nisl. Fusce scelerisque, velit eget hendrerit inte
+          rdum.</p>
+          <button type="button" class="design_button" 
+          onclick="alert('Design redirection')">View</button>
+        </div>
+        <div class="item-b">
+          <img src="img/design_projects/second.png" alt="photo">
+        </div>
+        <div class="item-c"></div>
+        <div class="item-d">
+          <img src="img/design_projects/fourth.png" alt="photo" style="visibility: hidden; min-height: 400px;">
+        </div>
+        <div class="item-e">
+          <h2>Design project</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Q
+            uisque auctor bibendum nisl.</p>
+          <button type="button" class="design_button"
+          onclick="alert('Design redirection')">View</button>
+        </div>
+      </div>
+    </section>
     <footer>
       <p>Copyright &copy; 2019 Konrad Kalita</p>
     </footer>
