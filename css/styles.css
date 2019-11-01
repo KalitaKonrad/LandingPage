@@ -443,7 +443,7 @@ ul.core_skills {
 }
 
 .contact_us h2 {
-  margin-left: 10%;
+  margin-left: 15%;
   font-size: 32px;
   line-height: 37px;
   letter-spacing: 0.02em;
@@ -452,7 +452,7 @@ ul.core_skills {
 
 .contact_data_and_form {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   width: 80%;
   border: 2px solid green;
   margin: auto;
@@ -461,11 +461,13 @@ ul.core_skills {
   background: var(--main-bg-color);
 }
 
+/* contact_us section -> contact_data */
+
 .contact_data {
   display: flex;
   position: relative;
   flex-flow: column wrap;
-  justify-content: space-between; /* OR STRECH? */
+  justify-content: stretch; /* OR STRECH? */
   background: var(--social-media-links-color);
   color: #FFFFFF;
   padding-left: 50px;
@@ -485,7 +487,7 @@ ul.core_skills {
 .contact_data p {
   max-width: 350px;
   margin: 0;
-
+  padding-right: 50px;
 }
 
 .address_and_phone {
@@ -502,9 +504,35 @@ ul.core_skills {
   line-height: 25px;
   letter-spacing: 0.02em;
 }
+
+/* contact_us section -> contact_form */
+
 .contact_form {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
 
 }
+
+.contact_form h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 62px;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+}
+
+.submission-form {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 500px;
+  margin: 2rem auto;
+  border: 2px solid black;
+  padding: 2rem;
+}
+
 /* footer */
 
 footer {
