@@ -328,6 +328,7 @@ ul.core_skills {
 }
 
 /* portfolio items (in grid) */
+
 .item-a {
   display: flex;
   flex-flow: column wrap;
@@ -427,10 +428,83 @@ ul.core_skills {
   transform: scale(1.1);
 }
 
+/* contact_us section */
 
+.contact_us {
+  display: flex;
+  position: relative;
+  width: 80%;
+  border: 2px solid red;
+  margin: auto;
+  flex-flow: column wrap;
+  overflow: hidden;
+  justify-content: flex-start;
+  background: var(--main-bg-color);
+}
 
+.contact_us h2 {
+  margin-left: 10%;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #222222;
+}
 
+.contact_data_and_form {
+  display: flex;
+  flex-flow: row wrap;
+  width: 80%;
+  border: 2px solid green;
+  margin: auto;
+  overflow: hidden;
+  justify-content: space-around;
+  background: var(--main-bg-color);
+}
 
+.contact_data {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  justify-content: space-between; /* OR STRECH? */
+  background: var(--social-media-links-color);
+  color: #FFFFFF;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.contact_bottom_part {
+  display: flex;
+  position: relative;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  min-height: 400px;
+  font-family: Ubuntu;
+  padding-bottom: 50px;
+}
+
+.contact_data p {
+  max-width: 350px;
+  margin: 0;
+
+}
+
+.address_and_phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+
+.localization {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+}
+.contact_form {
+
+}
 /* footer */
 
 footer {

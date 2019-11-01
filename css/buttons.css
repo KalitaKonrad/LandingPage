@@ -4,19 +4,24 @@
   --social-media-background-color: #FFFFFF;
 }
 
-/* social media links */
+/* all social media links */
 
 .social_media {
   display: flex;
   position: relative;
-  justify-content: space-around; 
+  justify-content: flex-start; 
 }
+
 
 .social_media li {
   display: inline-flex;
   position: relative;
   bottom: 30%;
   transform: scale(0.7);
+}
+
+.smaller_social_media li {
+  transform: scale(0.5);
 }
 
 i.fa-circle {
