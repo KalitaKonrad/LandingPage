@@ -94,3 +94,7 @@ i.fa-github {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
+
+.design_button:focus, .button:focus {
+  outline: none;
+}
