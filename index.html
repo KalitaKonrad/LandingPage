@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <nav class="container nav">
+      <nav class="container">
         <div class="brand">
           <img src="/img/logo_svg.png" alt="logo" height="26px" width="26px">
           <h1 style="padding-left: 5px;">Dev</h1>
@@ -25,7 +25,7 @@
         <ul class="navbar_buttons">
           <li><a href="#about_me" class="navbutton">About me</a></li>
           <li><a href="#skills" class="navbutton">Skills</a></li>
-          <li><a href="index.html" class="navbutton">Portfolio</a></li>
+          <li><a href="#portfolio" class="navbutton">Portfolio</a></li>
           <li><a href="#contact_and_cv" class="navbutton">Contact</a></li>
         </ul>      
       </nav>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
       <h2>Portfolio</h2>
       <div class="design_projects">
         <div class="item-a">
@@ -213,25 +213,12 @@
         <div class="contact_form">
           <h2>Let's start!</h2>
           <form action="" class="submission-form"> <!--Some php action-->
-            <label for="name">
-              Name
-            </label>
-            <input type="text" class="name" placeholder="Name">
-            <label for="email_adress">
-              Your e-mail address
-            </label>
-            <input type="text" class="email_adress" placeholder="Your e-mail address">
-            <label for="topic">
-              Topic
-            </label>
+            <input type="text" class="text" placeholder="Name">
+            <input type="text" class="email_address" placeholder="Your e-mail address">
             <input type="text" class="topic" placeholder="Topic">
-            <label for="message">
-              Message
-            </label>
-            <textarea rows="10" cols="30" placeholder="Message"></textarea>
+            <textarea rows="5" cols="30" class="message" placeholder="Message"></textarea>
             <input type="submit" value="Send" class="design_button">
           </form>
-          
         </div>
       </div>
     </section>
