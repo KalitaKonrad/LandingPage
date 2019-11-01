@@ -317,7 +317,8 @@ ul.core_skills {
   flex-flow: column wrap;
   margin: auto;
   overflow: visible;
-  background: var(--main-bg-color); 
+  background: var(--main-bg-color);
+  margin-bottom: 4%;
 }
 
 .design_projects {
@@ -437,9 +438,9 @@ ul.core_skills {
   border: 2px solid red;
   margin: auto;
   flex-flow: column wrap;
-  overflow: hidden;
+  overflow: visible;
   justify-content: flex-start;
-  background: var(--main-bg-color);
+  background: var(--gray-main-rectangle);
 }
 
 .contact_us h2 {
@@ -452,12 +453,13 @@ ul.core_skills {
 
 .contact_data_and_form {
   display: flex;
+  position: relative;
   flex-flow: row nowrap;
   width: 80%;
   border: 2px solid green;
   margin: auto;
-  overflow: hidden;
-  justify-content: space-around;
+  overflow: visible;
+  justify-content: stretch;
   background: var(--main-bg-color);
 }
 
@@ -467,11 +469,12 @@ ul.core_skills {
   display: flex;
   position: relative;
   flex-flow: column wrap;
-  justify-content: stretch; /* OR STRECH? */
+  justify-content: stretch;
   background: var(--social-media-links-color);
   color: #FFFFFF;
   padding-left: 50px;
   padding-top: 20px;
+  min-width: 35%;
 }
 
 .contact_bottom_part {
@@ -511,7 +514,8 @@ ul.core_skills {
   display: flex;
   position: relative;
   flex-flow: column wrap;
-
+  border: 5px solid green;
+  width: 100%;
 }
 
 .contact_form h2 {
@@ -519,18 +523,29 @@ ul.core_skills {
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
-  line-height: 62px;
+  line-height: 36px;
   letter-spacing: 0.04em;
-  margin: 0 auto;
+  align-self: flex-start;
 }
 
 .submission-form {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 500px;
-  margin: 2rem auto;
-  border: 2px solid black;
-  padding: 2rem;
+  justify-content: space-around;
+  border: 5px solid orange;
+  padding-left: 2rem;
+  align-self: stretch;
+}
+
+
+.text, .email_address, .topic, .message {
+  min-height: 60px;
+  width: 95%;
+  border-radius: 15px;
+  background-color: var(--gray-main-rectangle);
+  font-size: inherit;
+  outline: none;
+  margin: 10px 0;
 }
 
 /* footer */
