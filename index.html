@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="My landing page made for Coderscamp project">
+  <meta name="keywords" content="web design, html, css">
+  <meta name="author" content="Konrad Kalita">
+  <title>Landing Page</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="stylesheet" type="text/css" href="./css/buttons.css">
+  <link rel="stylesheet" type="text/css" href="./css/responsiveness.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="brand">
+          <img src="./img/logo_svg.png" alt="logo" height="26px" width="26px">
+          <h1 style="padding-left: 5px;">Dev</h1>
+        </div>
+        <ul class="navbar_buttons">
+          <li><a href="#about_me" class="navbutton">About me</a></li>
+          <li><a href="#skills" class="navbutton">Skills</a></li>
+          <li><a href="#portfolio" class="navbutton">Portfolio</a></li>
+          <li><a href="#contact_us" class="navbutton">Contact</a></li>
+        </ul>      
+      </nav>
+      <div class="container">
+        <div class="cover_photo">
+          <img src="./img/cover_layer.png" class="layer" alt="layer">
+          <h1>Welcome!</h1>
+          <h2>My name is Konrad.</h2> 
+          <div class="social_media">
+            <ul class="social_media">
+              <li>
+                <a href="https://twitter.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>   
+        </div>
+      </div>
+    </header>
+    
+    <section class="contact_and_cv">
+      <h2>I am happy to help you with any problem!</h2>
+      <div class="button_container">
+        <button type="button" class="button" onclick="alert('Contact redirection')">Contact me!</button>
+        <button type="button" class="button" onclick="alert('CV redirection')">Check my CV</button>
+      </div>
+    </section>
+
+    <section class="about_me" id="about_me">
+      <h2>About me</h2>
+      <div class="photo_personalData_description">
+        <img src="./img/avatar.png" alt="Photo of me" width="96px" height="96px">
+        <div class="personalData">
+          <ul>
+            <li>Full name: <b class="about_me_distinctive_text">Konrad Kalita</b></li>
+            <li>Age: <b class="about_me_distinctive_text">20 years</b></li>
+            <li>Profile: <b class="about_me_distinctive_text">Fullstack</b></li>
+            <li>Telephone: <b class="about_me_distinctive_text">+48 123 456 789</b></li>
+            <li>E-mail: <b class="about_me_distinctive_text">xyz@gmail.com</b></li>
+          </ul>
+        </div>
+        <div class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          consectetur blandit massa, vitae condimentum justo viverra at. Suspendisse 
+          id enim congue, iaculis eros a, volutpat ex. Interdum et malesuada fames ac
+          ante ipsum primis in faucibus. Morbi arcu dolor, porta eget enim volutpat, 
+          ullamcorper venenatis orci. Phasellus rhoncus auctor nisi. Aliquam erat vol
+          utpat. Fusce facilisis libero quam, vel venenatis ipsum tin
+          cidunt sed. Sed congue lorem nec eros pellentesque ultrices. Pellentesque at
+          laoreet arcu, a suscipit ligula. Aliquam volutpat tortor condimentum consec
+          tetur tempor. Cras ullamcorper lectus nec odio consequat interdum
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div>
+        <ul class="core_skills">
+          <li class="certain_skill">
+            <img src="./img/skillsIcons/icon_UxUi.png" class="certain_skill_photo" alt="UX/UI Figma" width="83px" height="83px">
+            <b class="distinctive_text">UX/UI</b>
+            Figma
+          </li>
+          <li class="certain_skill has_special_borders">
+            <img src="./img/skillsIcons/icon_frontend.png" class="certain_skill_photo" alt="HTML CSS JAVASCRIPT" width="83px" height="83px">
+            <b class="distinctive_text">Front End</b>
+            Html, CSS, Javascript
+          </li>
+          <li class="certain_skill">
+            <img src="./img/skillsIcons/icon_backend.png" class="certain_skill_photo" alt="PHP, Node.js" width="83px" height="83px">
+            <b class="distinctive_text">Back End</b>
+            PHP, Node.js
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="design_projects">
+        <div class="item-a">
+          <h2>Design</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Q
+          uisque auctor bibendum nisl. Fusce scelerisque, velit eget hendrerit inte
+          rdum.</p>
+          <button type="button" class="design_button" 
+          onclick="alert('Design redirection')">View</button>
+        </div>
+        <div class="item-b">
+          <img src="./img/design_projects/second.png" alt="photo">
+        </div>
+        <div class="item-c"></div>
+        <div class="item-d">
+          <img src="./img/design_projects/fourth.png" alt="photo" style="visibility: hidden; min-height: 400px;">
+        </div>
+        <div class="item-e">
+          <h2>Design project</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Q
+            uisque auctor bibendum nisl.</p>
+          <button type="button" class="design_button"
+          onclick="alert('Design redirection')">View</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact_us" id="contact_us">
+      <h2>Contact us</h2>
+      <div class="contact_data_and_form">
+        <div class="contact_data">
+          <img src="./img/logo_message.png" alt="letter photo" width=68px height=68px>
+          <p>Please describe your question.<br>
+            Send me a message and I will answer you as soon as possible!</p>
+          <div class="contact_bottom_part">
+            <div class="social_media">
+              <ul class="social_media smaller_social_media">
+                <li>
+                  <a href="https://twitter.com/" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-twitter fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-github fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://facebook.com/" target="_blank">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <p class="localization">Konrad<br>Poland, Kraków</p>
+            <p class="address_and_phone">ul. Tęczowa 12/3 50-000<br>
+            +48 123-456-789<br>
+            <u>xyz@gmail.com</u></p>
+          </div>
+        </div>
+        <div class="contact_form">
+          <h2>Let's start!</h2>
+          <form action="" class="submission-form"> <!--Some php action-->
+            <input type="text" class="text" placeholder="Name">
+            <input type="text" class="email_address" placeholder="Your e-mail address">
+            <input type="text" class="topic" placeholder="Topic">
+            <textarea rows="7" cols="30" class="message" placeholder="Message"></textarea>
+            <input type="submit" value="Send" class="design_button">
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &copy; 2019 Konrad Kalita</p>
+    </footer>
+  </body>
+</html>

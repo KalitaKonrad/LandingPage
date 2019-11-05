@@ -1,0 +1,108 @@
+:root {
+  --universal-button-color: #FFC53D;
+  --social-media-color: #FF9A3D;
+  --social-media-background-color: #FFFFFF;
+}
+
+/* all social media links */
+
+.social_media {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+}
+
+
+.social_media li {
+  display: inline-flex;
+  position: relative;
+  bottom: 30%;
+  transform: scale(0.7);
+}
+
+.smaller_social_media li {
+  transform: scale(0.5);
+  margin-right: -15px;
+  position: relative;
+}
+
+i.fa-circle {
+  color: var(--social-media-background-color);
+}
+
+i.fa-linkedin-in {
+  color: var(--social-media-color);
+}
+
+i.fa-facebook-f {
+  color: var(--social-media-color);
+}
+
+i.fa-twitter {
+  color: var(--social-media-color);
+}
+
+i.fa-github {
+  color: var(--social-media-color);  /* TO CHANGE! but how? */
+}
+
+/* button container and button styles */
+
+.button_container {
+  display: flex;
+  position: relative;
+  width: 35%;
+  overflow: visible;
+}
+
+.button {
+  position: relative;
+  margin: 0 10%;
+  font-style: normal;
+
+  background: linear-gradient(270deg
+    , var(--universal-button-color) 14%
+    , var(--social-media-color) 68.5%);
+  border-radius: 15px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 42px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.design_button {
+  position: relative;
+  font-style: normal;
+
+  background: linear-gradient(270deg
+    , var(--universal-button-color) 14%
+    , var(--social-media-color) 68.5%);
+  border-radius: 15px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 15px 26px;
+  margin-right: auto;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+
+.button:hover, .design_button:hover {
+  color: var(--universal-button-color);
+  background: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.design_button:focus, .button:focus {
+  outline: none;
+}
