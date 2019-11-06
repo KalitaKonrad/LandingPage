@@ -50,6 +50,15 @@ header {
   height: 100%;
 }
 
+.brand_header {
+  padding-left: 5px;
+}
+
+.logo {
+  height: 26px;
+  width: 26px;
+}
+
 .navbar_buttons li {
   padding: 0px 15px;
   cursor: pointer;

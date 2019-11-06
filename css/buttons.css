@@ -21,7 +21,6 @@
 .smaller_social_media li {
   transform: scale(0.5);
   margin-right: -15px;
-  position: relative;
 }
 
 i.fa-circle {
