@@ -93,17 +93,14 @@ header {
   display: flex;
   position: relative;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 630px;
   background-image: url('../img/cover_photo.png');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-}
-
-.container .main {
-  min-height: 630px;
 }
 
 .layer {
@@ -147,7 +144,7 @@ header {
   overflow: hidden; 
 }
 
-.contact_and_cv h2 {
+.contact_and_cv_header2 {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -341,7 +338,8 @@ ul.core_skills {
 /* portfolio items (in grid) */
 
 .item {
-  display: flex;
+  display: block;
+  width: auto;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

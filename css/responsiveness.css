@@ -1,6 +1,46 @@
+/* 400px AND LESS */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 400px) {
+  * {
+    font-size: 14px;
+    text-align: center;
+  }
+
   .container {
     justify-content: center;
   }
+
+  .main__title, .main__subtitle {
+    font-size: 30px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .main {
+    min-height: 250px;
+  }
+  
+  .brand_header {
+    font-size: 14px;
+  }
+
+  .contact_and_cv_header2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .buttons {
+    width: 80%;
+    justify-content: center;
+  }
+
+  .buttons__button {
+    padding: 5px 15px;
+    margin: 0 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 400px) {
+  
 }
