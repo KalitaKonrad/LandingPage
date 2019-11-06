@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,7 @@
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
   <link rel="stylesheet" type="text/css" href="./css/buttons.css">
   <link rel="stylesheet" type="text/css" href="./css/responsiveness.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
-  </style>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap' rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
@@ -30,55 +28,53 @@
         </ul>      
       </nav>
       <div class="container">
-        <div class="cover_photo">
+        <div class="main">
           <img src="./img/cover_layer.png" class="layer" alt="layer">
-          <h1>Welcome!</h1>
-          <h2>My name is Konrad.</h2> 
-          <div class="social_media">
-            <ul class="social_media">
-              <li>
-                <a href="https://twitter.com/" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-twitter fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-github fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a href="https://facebook.com/" target="_blank">
-                  <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x"></i>
-                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>   
+          <h1 class="main__title">Welcome!</h1>
+          <h2 class="main__subtitle">My name is Konrad.</h2> 
+          <ul class="social_media__list">
+            <li class="social_media__item">
+              <a href="https://twitter.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="social_media__item">
+              <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="social_media__item">
+              <a href="https://github.com/KalitaKonrad" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+            <li class="social_media__item">
+              <a href="https://facebook.com/" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
     
     <section class="contact_and_cv">
       <h2>I am happy to help you with any problem!</h2>
-      <div class="button_container">
-        <button type="button" class="button" onclick="alert('Contact redirection')">Contact me!</button>
-        <button type="button" class="button" onclick="alert('CV redirection')">Check my CV</button>
+      <div class="buttons">
+        <button type="button" class="buttons__button" onclick="alert('Contact redirection')">Contact me!</button>
+        <button type="button" class="buttons__button" onclick="alert('CV redirection')">Check my CV</button>
       </div>
     </section>
 
@@ -168,42 +164,40 @@
           <p>Please describe your question.<br>
             Send me a message and I will answer you as soon as possible!</p>
           <div class="contact_bottom_part">
-            <div class="social_media">
-              <ul class="social_media smaller_social_media">
-                <li>
-                  <a href="https://twitter.com/" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-twitter fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-github fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://facebook.com/" target="_blank">
-                    <span class="fa-stack fa-lg">
-                      <i class="fa fa-circle fa-stack-2x"></i>
-                      <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </span>
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <ul class="social_media__list smaller_social_media">
+              <li>
+                <a href="https://twitter.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/konrad-kalita-72121b182/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://facebook.com/" target="_blank">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
             <p class="localization">Konrad<br>Poland, Kraków</p>
             <p class="address_and_phone">ul. Tęczowa 12/3 50-000<br>
             +48 123-456-789<br>

@@ -6,17 +6,15 @@
 
 /* all social media links */
 
-.social_media {
+.social_media__list {
   display: flex;
   position: relative;
   justify-content: flex-start;
+  list-style: none;
 }
 
 
-.social_media li {
-  display: inline-flex;
-  position: relative;
-  bottom: 30%;
+.social_media__item {
   transform: scale(0.7);
 }
 
@@ -48,15 +46,12 @@ i.fa-github {
 
 /* button container and button styles */
 
-.button_container {
+.buttons {
   display: flex;
-  position: relative;
   width: 35%;
-  overflow: visible;
 }
 
-.button {
-  position: relative;
+.buttons__button {
   margin: 0 10%;
   font-style: normal;
 
@@ -96,13 +91,13 @@ i.fa-github {
   color: #FFFFFF;
 }
 
-.button:hover, .design_button:hover {
+.buttons__button:hover, .design_button:hover {
   color: var(--universal-button-color);
   background: #FFFFFF;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 
-.design_button:focus, .button:focus {
+.buttons__button, .design_button:focus {
   outline: none;
 }

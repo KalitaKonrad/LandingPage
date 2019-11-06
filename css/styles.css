@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Raleway', sans-serif;
-  height: 100%;
   font-size: 18px;
   line-height: 1.5;
   padding: 0px;
@@ -80,8 +79,8 @@ header {
   letter-spacing: 0.02em;
 }
 
-/* cover photo */ 
-.cover_photo {
+/* main photo */ 
+.main {
   display: flex;
   position: relative;
   min-width: 100%;
@@ -91,10 +90,10 @@ header {
   background-size: cover;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.container .cover_photo {
+.container .main {
   min-height: 630px;
 }
 
@@ -107,22 +106,22 @@ header {
   z-index: inherit;
 }
 
-.cover_photo h1 {
-  position: absolute;
+.main__title {
+  margin-bottom: -20px;
   font-size: 100px;
   font-weight: bold;
   text-align: inherit;
   color: var(--distinctive-text-color);
-  top: 3%;
+  z-index: 0;
 }
 
-.cover_photo h2 {
-  position: absolute;
+.main__subtitle {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 36px;
   font-weight: bold;
   text-align: inherit;
   color: #FFFFFF;
-  top: 30%;
 }
 
 /* contact and cv section */
