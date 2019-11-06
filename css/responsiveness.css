@@ -1,3 +1,12 @@
+/* global variables */
+:root {
+  --header-buttons-color: #515151;
+  --main-bg-color: #FFFFFF;
+  --social-media-links-color: #FF9A3D;
+  --gray-main-rectangle: #FAFAFF;
+  --distinctive-text-color: #FFC53D;
+}
+
 /* 400px AND LESS */
 
 @media only screen and (max-width: 400px) {
@@ -37,6 +46,34 @@
   .buttons__button {
     padding: 5px 15px;
     margin: 0 10px;
+  }
+
+  .my_photo {
+    margin-bottom: 30px;
+  }
+
+  .about_me {
+    background-image: linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
+    background-image: -webkit-linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
+  }
+
+  .description {
+    border-left: none;
+    border-top: 4px dotted var(--distinctive-text-color);
+  }
+  .photo_personalData_description {
+    display: flex;
+    width: 90%%;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .personal_data {
+    justify-content: center;
+    align-items: center;
+    
   }
   
 }
