@@ -15,6 +15,8 @@
     text-align: center;
   }
 
+  /* navbar */
+
   .container {
     justify-content: center;
   }
@@ -33,6 +35,8 @@
     font-size: 14px;
   }
 
+  /* contact_and_cv section */
+
   .contact_and_cv_header2 {
     font-size: 20px;
     font-weight: bold;
@@ -47,12 +51,15 @@
     padding: 5px 15px;
     margin: 0 10px;
   }
+  
+  /* about_me section */
 
   .my_photo {
     margin-bottom: 30px;
   }
 
   .about_me {
+    margin-bottom: 35px;
     background-image: linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
     background-image: -webkit-linear-gradient(left, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
   }
@@ -60,10 +67,14 @@
   .description {
     border-left: none;
     border-top: 4px dotted var(--distinctive-text-color);
+    max-width: 85%;
+    text-align: left;
+    margin-top: 15px;
+    padding-top: 15px;
   }
   .photo_personalData_description {
     display: flex;
-    width: 90%%;
+    width: 90%;
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
@@ -71,10 +82,48 @@
   }
 
   .personal_data {
-    justify-content: center;
-    align-items: center;
-    
+    position: static;
   }
+
+  /* skills section */
+
+  .skills {
+    margin: auto;
+    background-image: linear-gradient(right, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
+    background-image: -webkit-linear-gradient(right, var(--gray-main-rectangle), var(--gray-main-rectangle) 100%, transparent 70%, transparent 100%);
+  }
+
+  .skills_header2 {
+    margin-left: 0;
+    align-self: center;
+  }
+
+  .certain_skill {
+    align-self: center;
+  }
+
+  .core_skills {
+    flex-flow: column nowrap;
+    width: 93%;
+    margin: 10px;
+    padding: 0;
+  }
+
+  
+
+  .has_special_borders {
+    border-left: none;
+    border-right: none;
+    border-top: 4px dotted var(--distinctive-text-color);
+    border-bottom: 4px dotted var(--distinctive-text-color);
+    padding: 30px 0;
+  }
+
+  .certain_skill {
+    transform: scale(0.8);
+  }
+
+  /* portfolio section */
   
 }
 

@@ -205,10 +205,9 @@ header {
 .personal_data {
   display: flex;
   flex-flow: column wrap;
-  position: relative;
+  position: static;
   right: 6%;
   bottom: 20px;
-  border: 2px solid green;
   align-items: center;
   
   margin: auto;
@@ -219,6 +218,12 @@ header {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
+}
+
+.personal_data__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
 }
 
 .personalData li {
@@ -250,7 +255,7 @@ header {
   background-image: -webkit-linear-gradient(right, var(--gray-main-rectangle), var(--gray-main-rectangle) 70%, transparent 70%, transparent 100%);
 }
 
-.skills h2 {
+.skills_header2 {
   margin-left: 35%;
   font-size: 32px;
   line-height: 38px;
