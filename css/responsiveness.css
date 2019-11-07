@@ -124,7 +124,19 @@
   }
 
   /* portfolio section */
-  
+
+  .design_projects {
+    display: flex;
+    flex-flow: column wrap; 
+  }
+
+  .item_first, .item_fifth {
+    min-height: 0;
+    padding-bottom: 20px;
+  }
+  .item_second, .item_third, .item_fourth {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 400px) {
