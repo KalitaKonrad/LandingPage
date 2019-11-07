@@ -146,7 +146,7 @@ header {
 
 .contact_and_cv_header2 {
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 36px;
   line-height: 42px;
 
@@ -417,23 +417,15 @@ ul.core_skills {
 
 .contact_us {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
   position: relative;
   width: 80%;
   /*border: 2px solid red;*/
   padding-bottom: 5%;
   margin: auto;
-  flex-flow: column wrap;
   overflow: visible;
-  justify-content: flex-start;
   background: var(--gray-main-rectangle);
-}
-
-.contact_us h2 {
-  margin-left: 15%;
-  font-size: 32px;
-  line-height: 37px;
-  letter-spacing: 0.02em;
-  color: #222222;
 }
 
 .contact_data_and_form {
@@ -504,16 +496,6 @@ ul.core_skills {
   width: 100%;
 }
 
-.contact_form h2 {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 0.04em;
-  align-self: flex-start;
-}
-
 .submission-form {
   display: flex;
   flex-flow: column nowrap;
@@ -522,7 +504,6 @@ ul.core_skills {
   padding-left: 2rem;
   align-self: stretch;
 }
-
 
 .text, .email_address, .topic, .message {
   min-height: 60px;
